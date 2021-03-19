@@ -1,0 +1,205 @@
+/* PATRONES GLOBALES DE CSS */
+
+/* Tipografía Principal */
+h1, h2, h3, a, button { font-family: 'Montserrat', sans-serif; }
+
+/* Tipografía Secundaria */
+h4, h5, h6, p, form, input, select, option, div, span { font-family: 'paloseco', sans-serif; }
+
+/* Asignación de propiedad display: block; a etiquetas de estructura */
+header, main, section, footer, aside, figure, figcaption, nav, div { display: block; }
+
+/*quitar margen que traen margen po defecto varias equitas de html*/
+body, h1, h2, h3, p, h4, h5, h6, figure, img {margin: 0; }
+
+
+/* CSS Propio */
+
+/* Componente Botón WhatsApp flotante */
+aside#boton-wp { width:45px;   height:45px;  margin:0;   float:none;   position:fixed;   right:15px;  bottom:15px;
+z-index: 99998; }
+
+aside#boton-wp a {width:100%;  height:auto;   margin:0;  float:none;  position:relative;  display:block;
+background-color:#00bb2d;   border-radius:50%;    text-align:center;  padding:10px 0;  
+transition:all 0.3s ease-in;}
+
+aside#boton-wp a i {font-size:1.5em;  line-height:1em;  color:#fff;  transition:all 0.3s ease-in;  }
+
+aside#boton-wp a:hover {   background:#000;  transition:all 0.3s ease-in; }
+aside#boton-wp a:hover i {  color:#b56617;  transition:all 0.3s ease-in; }
+
+
+/* Componente Menú Responsive */
+aside#menu-moviles { width: 290px; height: 100%; display:none; margin: 0; float: none; position: fixed; 
+right: -290px; top: 0; z-index: 99998; background: #000; }
+
+aside#menu-moviles a#abrir-menu { width: 35px; height: auto; margin: 0; float: none; position: absolute; 
+top: 25px; left: -35px; display: block; text-decoration: none; color: #000; background: #b56617;  
+z-index:99996; 
+font-weight: 600; font-size: 1em; line-height: 1em; text-align: center; padding: 10px 0; 
+border-radius: 5px 0 0 5px; transition: all 0.3s ease-in; }
+
+aside#menu-moviles a#abrir-menu:hover { background: #b56617; transition: all 0.3s ease-in }
+
+aside#menu-moviles a#cerrar-menu { width: 35px; height: auto; margin: 0; float: none; position: absolute; 
+top: 25px; left: -35px; display: none; text-decoration: none; color: #000; background: #b56617;
+z-index:99996;  
+font-weight: 600; font-size: 1em; line-height: 1em; text-align: center; padding: 10px 0; 
+border-radius: 5px 0 0 5px; transition: all 0.3s ease-in; }
+
+aside#menu-moviles a#cerrar-menu:hover { background: #b56617; transition: all 0.3s ease-in; }
+
+aside#menu-moviles nav { width: 60%; height: auto; margin: 15% auto; float: none; position: relative; }
+aside#menu-moviles nav a { width: 100%; height: auto; display: block; margin: 0 auto; float: none; 
+position: relative; color: #fff; font-weight: 600; font-size: 1.25em; padding: 10px 0; text-decoration: none; 
+transition: all 0.3s ease-in; }
+
+aside#menu-moviles nav a:hover { color: #b56617; transition: all 0.3s ease-in; }
+
+a:link, a:visited, a:active {text-decoration:none;}
+
+
+/* Componente Header con Logo y Menú */
+
+
+
+header { width: 100%; margin: 0; float:none;  position:fixed;  left: 0; top: 0; z-index: 9998; 
+background: url('../img/2.jpg') no-repeat bottom center   fixed #111;  background-size:cover;}
+
+header.no-sticky{ height:500px;}
+header.sticky { height:120px;    }
+
+
+header article {width:1000px; height:90px; margin: 0 auto; float:none; position:relative; }
+
+header article figure {width:152px; height:60px; margin:0; float:left; position:relative; top:10px; }
+
+header article figure a {width:100%; height:auto; margin:0 auto;  float:none;  position:relative; 
+display:block; }
+
+header article figure a img {width:auto; height: 90px; margin: 0 auto; float: none; position: relative; 
+display: block; }
+
+header article nav { width:400px; height: 40px; margin: 0; float: right; position: relative; top: 20px; }
+
+header article nav a { width: auto; height: auto; margin: 0 15px; float: left; position: relative; 
+text-decoration: none; color: #fff; font-weight: 700; font-size: 1em; text-align: 
+center; padding: 12px 0; transition: all 0.3s ease-in; }
+
+header article nav a:hover { color: #b56617;  font-size:1.03em; transition: all 0.3s ease-in; }
+
+
+
+
+
+/* Caja Main */
+main { width:100%;  height:auto;  margin:600px auto 0; float:none;  position:relative; }
+main.margin-200{ margin:300px auto 0;}
+main.margin-600{margin:500px auto 0;}
+
+
+main section#alto{  width:100%; height:auto; margin:0 auto;  float: none;  position:relative; }
+
+main section#alto nav{ width:900px;  height:auto;  margin:0 auto; float:none;  position:relative; 
+padding:80px 0;}
+
+main section#alto nav h6{ color:#b56617; font-weight:800; font-size: 2em; 
+line-height: 1em; text-align: center;padding: 1px}
+
+main section#alto nav p{color: #000; font-weight: 300; font-size: 0.9em; 
+line-height: 1.45em; text-align:center; padding: 10px; letter-spacing: 0.01em; }
+
+main section#alto nav a{ width:250px; height:200px;  margin:9px 20px auto;  float:none;  position:relative; 
+display:inline-block;  }
+
+
+main section#alto nav h3{ font-weight: 500;  font-size:1.2em; text-align:center;  padding: 0; 
+color:#b56617 }
+
+main section#alto nav a img{ width:250px;  height:200px;  margin:15px auto;  float:none;  position:relative;  
+display:block; }
+
+main section#alto nav a:hover{transition: all 0.3s ease-in;} 
+
+main section#alto nav a:hover img {opacity:0.7; transform: scale(1.08);  transition: all 0.3s ease-in;}
+
+
+
+
+
+
+/*footer*/
+
+footer {width:100%; height:400px; margin:0 auto; position:relative;   
+background: url('../img/2.jpg') no-repeat bottom center   fixed #111;  background-size:cover; }  
+
+footer article {width:120px;  height:auto;  margin:0 auto;  float:none;  position:relative;}
+
+footer article div#superior-footer {width:100%;   height:200px;  margin:0 auto 30px;   float:none;  
+position:relative; }
+
+footer article div#superior-footer div.cajas-footer {width:230px;  height:200px;   margin:0 60px 0 0;   float:left;
+position: relative;  }
+
+footer article div#superior-footer div.cajas-footer img {width:auto;  height:80px;   margin:100px 10px; 
+display:block;  float:none;  position:relative; }
+
+/* componente botones redes sociales */
+footer article div#superior-footer div.cajas-footer a { width:50px;  height:auto;  float:none;  position:relative;
+display:block;  text-align:right;  bottom:172px;  font-size:1.8em;  margin: 0 140px auto;  text-decoration: none;
+color: #b56617;  transition: all 0.2s ease-in;}
+
+/* footer article div#superior-footer div.cajas-footer a:hover i{} */
+footer article div#superior-footer div.cajas-footer a:hover i  { color: #fff; 
+transition: all 0.2s ease-in;}
+
+
+
+/* Ajustes para Tablets */
+@media only screen and (max-width: 1199px){
+header article { width: 90%; }
+header article figure { margin: 0 auto; float: left;}
+header article nav { display: none; }
+
+
+aside#menu-moviles { display:block; z-index:9999;}
+
+main section#alto  { height:auto; }
+main section#alto nav { width: 80%;}
+main section#alto h6
+main section#alto h3
+main section#alto p { text-align:center; }
+main section#alto p { float:none;   margin: 0 auto;  padding:0 0 15px; }
+main section#alto nav a {width:auto; float:none; margin:9px 80px auto;    }
+
+
+
+/*footer*/
+
+footer article { width: 80%; }
+footer article div#superior-footer { height:auto;}
+footer article div#superior-footer div.cajas-footer { height: auto; margin: 0 auto 60px; float: none; }
+footer article div#superior-footer div.cajas-footer a{bottom: 70px; }
+footer article div#superior-footer div.cajas-footer img{display: block; top:100px;}
+
+
+
+
+
+@media only screen and (max-width: 799px){
+    
+}
+
+/* Ajustes para Móviles Grandes */
+@media only screen and (max-width: 499px){
+    header article figure { margin: 0; float: left; }
+}
+
+/* Ajustes para Móviles Pequeños */
+@media only screen and (max-width: 399px){
+    
+}
+/* Ajustes para Móviles Pequeños */
+@media only screen and (max-width: 399px){
+    
+}
